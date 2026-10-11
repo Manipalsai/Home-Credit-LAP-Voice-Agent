@@ -199,6 +199,8 @@ For instructions on configuring Retell AI or Bolna, selecting Indian voices (`11
 
 ---
 
-## 9. GitHub Delivery
+## 9. GitHub Repository & Delivery
 
-To commit and push the repository securely to GitHub, follow the instructions in [`docs/GITHUB_SETUP.md`](./docs/GITHUB_SETUP.md).
+- **Repository URL:** [https://github.com/Manipalsai/Home-Credit-LAP-Voice-Agent](https://github.com/Manipalsai/Home-Credit-LAP-Voice-Agent)
+- **Default Branch:** `main`
+- **Documentation Guide:** [`docs/GITHUB_SETUP.md`](./docs/GITHUB_SETUP.md)
