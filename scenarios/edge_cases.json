@@ -1,0 +1,89 @@
+[
+  {
+    "id": "amount_cap_accepted",
+    "name": "Edge Case - Loan Cap Exceeded (90L) and Customer Accepts 75L Alternative",
+    "description": "Customer requests ₹90 Lakhs. Agent explains the ₹75 Lakh cap. Customer agrees to proceed with ₹75 Lakhs.",
+    "customer_name": "Rohan Deshmukh",
+    "expected_outcome": "qualified_handoff",
+    "turns": [
+      "Yes, Rohan here.",
+      "Yes, let's proceed.",
+      "Residential bungalow.",
+      "Sole owner.",
+      "Original papers are available at home.",
+      "I need ninety lakhs.",
+      "Yes, 75 lakhs is fine, let's proceed with 75.",
+      "Self-employed with business bank account receipts.",
+      "Two crore fifty lakhs.",
+      "Twelve years."
+    ]
+  },
+  {
+    "id": "amount_cap_declined",
+    "name": "Edge Case - Loan Cap Exceeded (90L) and Customer Declines 75L Alternative",
+    "description": "Customer requests ₹90 Lakhs. When informed about the ₹75 Lakh ceiling, customer declines the alternative.",
+    "customer_name": "Tanvi Sen",
+    "expected_outcome": "amount_cap_rejected",
+    "turns": [
+      "Yes, Tanvi speaking.",
+      "Yes, I want to explore.",
+      "Commercial office.",
+      "Solely owned.",
+      "Original deeds are in my possession.",
+      "I need ninety lakhs.",
+      "No, 75 is not enough for my project, cancel it."
+    ]
+  },
+  {
+    "id": "multi_fact_out_of_order",
+    "name": "Edge Case - Out-of-Order Multi-Fact Utterance",
+    "description": "Customer provides property type, ownership, market value, and requested amount all in one sentence.",
+    "customer_name": "Gaurav Singhal",
+    "expected_outcome": "qualified_handoff",
+    "turns": [
+      "Yes, this is Gaurav.",
+      "Sure, go ahead.",
+      "It's a residential house, jointly owned with my wife, worth about one crore, and I need sixty lakhs.",
+      "Yes, the original papers are kept at home.",
+      "I am salaried and salary comes into my bank account.",
+      "Ten years."
+    ]
+  },
+  {
+    "id": "interruption_interest_rate_query",
+    "name": "Edge Case - Borrower Interruption for Interest Rate",
+    "description": "Borrower interrupts midway to ask about interest rate. Agent answers groundedly and resumes checklist seamlessly.",
+    "customer_name": "Naveen Chawla",
+    "expected_outcome": "qualified_handoff",
+    "turns": [
+      "Yes, Naveen speaking.",
+      "Okay, proceed.",
+      "Residential apartment.",
+      "What is your interest rate?",
+      "Sole ownership.",
+      "Yes, original documents are available.",
+      "Forty lakhs.",
+      "Salaried with salary credited to bank account.",
+      "Ninety lakhs.",
+      "Eight years."
+    ]
+  },
+  {
+    "id": "tenure_spoken_correction",
+    "name": "Edge Case - Spoken Tenure Correction",
+    "description": "Customer corrects tenure mid-sentence: 'Ten years, actually make that twelve.' Engine parses 12 years.",
+    "customer_name": "Harish Iyer",
+    "expected_outcome": "qualified_handoff",
+    "turns": [
+      "Yes, Harish speaking.",
+      "Yes, please.",
+      "Residential house.",
+      "Sole owner.",
+      "Original documents available.",
+      "Forty five lakhs.",
+      "Salaried with direct bank credit.",
+      "One crore twenty lakhs.",
+      "Ten years, actually make that twelve."
+    ]
+  }
+]

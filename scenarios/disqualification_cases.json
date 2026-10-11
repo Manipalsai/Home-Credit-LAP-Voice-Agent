@@ -1,0 +1,80 @@
+[
+  {
+    "id": "disqualify_agricultural_property",
+    "name": "Disqualification - Agricultural Property",
+    "description": "Customer specifies agricultural land. Engine must immediately disqualify and terminate without asking further questions.",
+    "customer_name": "Ramesh Yadav",
+    "expected_outcome": "disqualified",
+    "turns": [
+      "Yes, Ramesh speaking.",
+      "Yes, I want to check.",
+      "It is an agricultural farmland in Haryana."
+    ]
+  },
+  {
+    "id": "disqualify_missing_original_documents",
+    "name": "Disqualification - Original Documents Unavailable",
+    "description": "Customer confirms original title deeds are lost/unavailable. Engine must terminate immediately.",
+    "customer_name": "Deepak Verma",
+    "expected_outcome": "disqualified",
+    "turns": [
+      "Yes, Deepak here.",
+      "Yes, please proceed.",
+      "Residential builder floor.",
+      "Solely owned by me.",
+      "No, the original papers are lost and unavailable."
+    ]
+  },
+  {
+    "id": "disqualify_cash_income",
+    "name": "Disqualification - Cash Income Mode",
+    "description": "Customer states all business income is received in cash rather than bank deposits.",
+    "customer_name": "Kishore Kumar",
+    "expected_outcome": "disqualified",
+    "turns": [
+      "Yes, speaking.",
+      "Okay, let's check.",
+      "Commercial shop.",
+      "Sole owner.",
+      "Original papers are available in my custody.",
+      "Forty lakhs.",
+      "I run a cash-only grocery business, all my income is in cash in hand."
+    ]
+  },
+  {
+    "id": "disqualify_tenure_too_short",
+    "name": "Disqualification - Tenure Under 3 Years (2 Years)",
+    "description": "Customer requests 2 years repayment tenure, which is below the 3-year minimum policy limit.",
+    "customer_name": "Manish Gupta",
+    "expected_outcome": "disqualified",
+    "turns": [
+      "Yes, Manish speaking.",
+      "Sure.",
+      "Residential flat.",
+      "Solely mine.",
+      "Yes, originals are available.",
+      "Twenty five lakhs.",
+      "Salaried with bank credit.",
+      "Seventy lakhs.",
+      "Two years."
+    ]
+  },
+  {
+    "id": "disqualify_tenure_too_long",
+    "name": "Disqualification - Tenure Over 15 Years (16 Years)",
+    "description": "Customer requests 16 years repayment tenure, exceeding the 15-year maximum policy limit.",
+    "customer_name": "Pooja Malhotra",
+    "expected_outcome": "disqualified",
+    "turns": [
+      "Yes, speaking.",
+      "Yes, tell me.",
+      "Residential villa.",
+      "Jointly with my spouse.",
+      "Yes, original deeds are available.",
+      "Fifty lakhs.",
+      "Salaried in MNC with direct bank transfer.",
+      "One crore fifty lakhs.",
+      "Sixteen years."
+    ]
+  }
+]

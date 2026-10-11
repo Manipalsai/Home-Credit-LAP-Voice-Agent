@@ -1,0 +1,56 @@
+[
+  {
+    "id": "transfer_existing_property_loan",
+    "name": "Transfer Specialist - Existing Loan on Property Balance Transfer",
+    "description": "Borrower wants to transfer their current home/property loan from another bank. Routes directly to loan transfer specialist.",
+    "customer_name": "Sanjay Mehta",
+    "expected_outcome": "routed_transfer_specialist",
+    "turns": [
+      "Yes, Sanjay speaking.",
+      "Actually, I already have a loan against this property and want to transfer it to lower my interest."
+    ]
+  },
+  {
+    "id": "transfer_emi_reduction_property_loan",
+    "name": "Transfer Specialist - Lower EMI on Existing Property Loan",
+    "description": "Customer asks to reduce EMI on their existing running property loan during the call.",
+    "customer_name": "Kavita Rao",
+    "expected_outcome": "routed_transfer_specialist",
+    "turns": [
+      "Yes, Kavita speaking.",
+      "Yes, I want to explore.",
+      "It is a residential apartment, but can you reduce emi on my current property loan?"
+    ]
+  },
+  {
+    "id": "busy_customer_callback",
+    "name": "Busy Customer - Schedule Callback",
+    "description": "Customer is busy at work/driving and provides a preferred callback time. Engine ends call politely without pushing checklist.",
+    "customer_name": "Arjun Kapoor",
+    "expected_outcome": "busy_callback_scheduled",
+    "turns": [
+      "Yes, Arjun speaking, but I am in a client meeting right now. Please call back tomorrow evening."
+    ]
+  },
+  {
+    "id": "wrong_person_apology",
+    "name": "Wrong Person - Polite Apology and Exit",
+    "description": "The person answering is not the intended customer. Agent apologizes without disclosing loan details and ends call.",
+    "customer_name": "Rajesh Sharma",
+    "expected_outcome": "wrong_person",
+    "turns": [
+      "No, you have the wrong number, there is no Rajesh here."
+    ]
+  },
+  {
+    "id": "customer_declines_offer",
+    "name": "Customer Declines Offer - Respectful Exit",
+    "description": "Customer states they are not interested in taking any loan.",
+    "customer_name": "Neha Joshi",
+    "expected_outcome": "customer_declined",
+    "turns": [
+      "Yes, Neha speaking.",
+      "No thanks, I am not interested in taking any loan."
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "eligible_standard_residential",
+    "name": "Eligible Customer - Standard Residential (50L, Salaried, 10Y)",
+    "description": "Rajesh Sharma qualifies smoothly with residential property, sole ownership, documents available, 50L loan, salaried bank credit, 1.2 Cr valuation, and 10 year tenure.",
+    "customer_name": "Rajesh Sharma",
+    "expected_outcome": "qualified_handoff",
+    "turns": [
+      "Yes, Rajesh Sharma speaking.",
+      "Sure, I would like to explore the LAP offer.",
+      "It is a residential house.",
+      "I am the sole owner.",
+      "Yes, the original papers are safely kept at my home.",
+      "I am looking for fifty lakhs.",
+      "I am salaried and receive my salary directly into my HDFC bank account.",
+      "The market value is roughly one crore twenty lakhs.",
+      "Ten years."
+    ]
+  },
+  {
+    "id": "eligible_commercial_self_employed",
+    "name": "Eligible Customer - Commercial Property (Self-Employed, 60L, 7Y)",
+    "description": "Self-employed commercial shop owner with bank deposits qualifying for 60 Lakhs for 7 years.",
+    "customer_name": "Vikram Sethi",
+    "expected_outcome": "qualified_handoff",
+    "turns": [
+      "Yes, Vikram speaking.",
+      "Yes, please tell me about the offer.",
+      "It's a commercial retail shop.",
+      "I own it solely.",
+      "Yes, all original title deeds are available in my bank locker.",
+      "I need sixty lakhs.",
+      "I run a trading business and all payments come through bank NEFT and cheque.",
+      "The market value is about two crore.",
+      "Seven years."
+    ]
+  },
+  {
+    "id": "eligible_industrial_joint_exact_boundary",
+    "name": "Eligible Customer - Industrial Joint Ownership & Exact Caps (75L, 15Y)",
+    "description": "Tests boundary values: exact 75L loan limit, exact 15-year maximum tenure, industrial property, and joint ownership.",
+    "customer_name": "Sunita Patil",
+    "expected_outcome": "qualified_handoff",
+    "turns": [
+      "Speaking, this is Sunita.",
+      "Yes, go ahead.",
+      "It is an industrial manufacturing shed.",
+      "It is jointly owned by me and my brother.",
+      "Yes, original deeds are available.",
+      "I want exactly seventy five lakhs.",
+      "We are self-employed with all revenue credited into our current bank account.",
+      "Valuation is about 3 crores.",
+      "Fifteen years."
+    ]
+  },
+  {
+    "id": "eligible_exact_min_tenure",
+    "name": "Eligible Customer - Exact 3 Year Minimum Tenure",
+    "description": "Tests exact 3-year minimum tenure threshold.",
+    "customer_name": "Amit Roy",
+    "expected_outcome": "qualified_handoff",
+    "turns": [
+      "Yes, Amit speaking.",
+      "Yes, tell me.",
+      "Residential apartment.",
+      "Sole owner.",
+      "Original papers are available.",
+      "Thirty lakhs.",
+      "Salaried with salary credited to bank account.",
+      "Eighty lakhs.",
+      "Three years."
+    ]
+  }
+]
